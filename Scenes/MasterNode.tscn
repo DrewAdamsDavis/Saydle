@@ -1,0 +1,1116 @@
+[gd_scene format=3 uid="uid://cagmadooxtpil"]
+
+[ext_resource type="Script" uid="uid://bcfwiv27omdmh" path="res://Scripts/MasterNode.cs" id="1_8nevx"]
+[ext_resource type="PackedScene" uid="uid://d06wjac2bvuao" path="res://Scenes/FeedbackRow.tscn" id="2_qtbou"]
+[ext_resource type="Script" uid="uid://cllgv15kbs1hh" path="res://Scripts/InputLoop/InputButton.cs" id="3_qtbou"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k3bgn"]
+bg_color = Color(0.79, 0.79, 0.79, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uuasq"]
+font_size = 36
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rocul"]
+bg_color = Color(0.79, 0.79, 0.79, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qtbou"]
+font_size = 38
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jwf85"]
+line_spacing = 0.0
+font_size = 42
+font_color = Color(0, 0, 0, 1)
+
+[node name="MasterNode" type="Control" unique_id=455929379]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_8nevx")
+
+[node name="Game Background" type="Panel" parent="." unique_id=1018734031]
+custom_minimum_size = Vector2(1000, 1000)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FeedbackRows" type="VBoxContainer" parent="Game Background" unique_id=1582957056]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 64.0
+offset_right = 759.0
+offset_bottom = 592.0
+theme_override_constants/separation = 12
+
+[node name="FeedbackRow" parent="Game Background/FeedbackRows" unique_id=1930949433 instance=ExtResource("2_qtbou")]
+layout_mode = 2
+
+[node name="FeedbackRow2" parent="Game Background/FeedbackRows" unique_id=1438392283 instance=ExtResource("2_qtbou")]
+layout_mode = 2
+
+[node name="FeedbackRow3" parent="Game Background/FeedbackRows" unique_id=639028514 instance=ExtResource("2_qtbou")]
+layout_mode = 2
+
+[node name="FeedbackRow4" parent="Game Background/FeedbackRows" unique_id=830225450 instance=ExtResource("2_qtbou")]
+layout_mode = 2
+
+[node name="FeedbackRow5" parent="Game Background/FeedbackRows" unique_id=823254224 instance=ExtResource("2_qtbou")]
+layout_mode = 2
+
+[node name="FeedbackRow6" parent="Game Background/FeedbackRows" unique_id=1150393692 instance=ExtResource("2_qtbou")]
+layout_mode = 2
+
+[node name="InputButtons" type="Node" parent="Game Background" unique_id=91984190]
+
+[node name="Vowels" type="HBoxContainer" parent="Game Background/InputButtons" unique_id=281535660]
+offset_left = 97.0
+offset_top = 745.0
+offset_right = 863.0
+offset_bottom = 803.0
+
+[node name="əInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=763800516 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/əInputButton" unique_id=654776608]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/əInputButton/PanelContainer" unique_id=807233650]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ə"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="ɪInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1096300414 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/ɪInputButton" unique_id=1962436327]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/ɪInputButton/PanelContainer" unique_id=923460913]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ɪ"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="iInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1324460020 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/iInputButton" unique_id=750167578]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/iInputButton/PanelContainer" unique_id=651291684]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "i"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="ɛInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1938416122 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/ɛInputButton" unique_id=128250062]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/ɛInputButton/PanelContainer" unique_id=619726447]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ɛ"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="æInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=688543139 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/æInputButton" unique_id=676506050]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/æInputButton/PanelContainer" unique_id=733501207]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "æ"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="ʌInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1119685445 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/ʌInputButton" unique_id=1995236805]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/ʌInputButton/PanelContainer" unique_id=753540605]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ʌ"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="ɑInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1913443501 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/ɑInputButton" unique_id=1174581255]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/ɑInputButton/PanelContainer" unique_id=1927879659]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ɑ"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="ɔInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1531828992 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/ɔInputButton" unique_id=987422479]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/ɔInputButton/PanelContainer" unique_id=837551439]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ɔ"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="ʊInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1486534710 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/ʊInputButton" unique_id=1363712421]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/ʊInputButton/PanelContainer" unique_id=324179966]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ʊ"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="uInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=2100422599 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/uInputButton" unique_id=828143074]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/uInputButton/PanelContainer" unique_id=792669156]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "u"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="eInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1095835005 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/eInputButton" unique_id=1664734304]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/eInputButton/PanelContainer" unique_id=95967568]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "e"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="ɜInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1136433381 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/ɜInputButton" unique_id=467788654]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/ɜInputButton/PanelContainer" unique_id=118913778]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ɜ"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="oInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=493949752 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/oInputButton" unique_id=1096012881]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/oInputButton/PanelContainer" unique_id=2131195415]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "o"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="aInputButton2" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1226932595 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/aInputButton2" unique_id=1145621279]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/aInputButton2/PanelContainer" unique_id=1262336744]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "a"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="Consonants" type="HBoxContainer" parent="Game Background/InputButtons" unique_id=1207419191]
+offset_left = 104.0
+offset_top = 849.0
+offset_right = 988.0
+offset_bottom = 899.0
+
+[node name="NInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1046901658 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/NInputButton" unique_id=1163634260]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/NInputButton/PanelContainer" unique_id=2069025605]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "n"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="TInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1551552884 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/TInputButton" unique_id=20410]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/TInputButton/PanelContainer" unique_id=235339544]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "t"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="SInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1246643828 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/SInputButton" unique_id=813954355]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/SInputButton/PanelContainer" unique_id=2068195636]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "s"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="ɹInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=2067549218 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/ɹInputButton" unique_id=147883433]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/ɹInputButton/PanelContainer" unique_id=2011483799]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ɹ"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="LInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=2122131147 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/LInputButton" unique_id=1549387517]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/LInputButton/PanelContainer" unique_id=600367761]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "l"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="DInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1255512160 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/DInputButton" unique_id=67481750]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/DInputButton/PanelContainer" unique_id=1377953805]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "d"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="KInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1558268838 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/KInputButton" unique_id=1490582345]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/KInputButton/PanelContainer" unique_id=1976701789]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "k"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="MInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=2099868625 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/MInputButton" unique_id=629207201]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/MInputButton/PanelContainer" unique_id=16185132]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "m"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="ZInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1745657837 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/ZInputButton" unique_id=332114568]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/ZInputButton/PanelContainer" unique_id=781978087]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "z"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="bInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=59037632 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/bInputButton" unique_id=1154176731]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/bInputButton/PanelContainer" unique_id=1820074778]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "b"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="gInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1568959774 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/gInputButton" unique_id=421221709]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/gInputButton/PanelContainer" unique_id=1715166617]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "g"
+label_settings = SubResource("LabelSettings_jwf85")
+vertical_alignment = 2
+
+[node name="vInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=672145876 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/vInputButton" unique_id=1515543003]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/vInputButton/PanelContainer" unique_id=253789436]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "v"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="fInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=175144900 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/fInputButton" unique_id=886929429]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/fInputButton/PanelContainer" unique_id=956637675]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "f"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="hInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1230075003 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/hInputButton" unique_id=1682913497]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/hInputButton/PanelContainer" unique_id=1601957005]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "h"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="Consonants2" type="HBoxContainer" parent="Game Background/InputButtons" unique_id=447239405]
+offset_left = 204.0
+offset_top = 922.0
+offset_right = 1088.0
+offset_bottom = 972.0
+
+[node name="ʃInputButton" type="Button" parent="Game Background/InputButtons/Consonants2" unique_id=1113366856 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants2/ʃInputButton" unique_id=368527183]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants2/ʃInputButton/PanelContainer" unique_id=1340036269]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "ʃ"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="ǰInputButton" type="Button" parent="Game Background/InputButtons/Consonants2" unique_id=437375596 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants2/ǰInputButton" unique_id=443846804]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants2/ǰInputButton/PanelContainer" unique_id=1320437821]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ǰ"
+label_settings = SubResource("LabelSettings_qtbou")
+vertical_alignment = 2
+
+[node name="čInputButton3" type="Button" parent="Game Background/InputButtons/Consonants2" unique_id=2116202404 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+action_mode = 0
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants2/čInputButton3" unique_id=1071208531]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants2/čInputButton3/PanelContainer" unique_id=959885115]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "č"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="jInputButton" type="Button" parent="Game Background/InputButtons/Consonants2" unique_id=677233500 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants2/jInputButton" unique_id=2020199738]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants2/jInputButton/PanelContainer" unique_id=1755159629]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "j"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="wInputButton" type="Button" parent="Game Background/InputButtons/Consonants2" unique_id=2079873523 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants2/wInputButton" unique_id=861358562]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants2/wInputButton/PanelContainer" unique_id=1038377625]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "w"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="ŋInputButton" type="Button" parent="Game Background/InputButtons/Consonants2" unique_id=1287156498 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+text = "ŋ"
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants2/ŋInputButton" unique_id=2110999462]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants2/ŋInputButton/PanelContainer" unique_id=975199698]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ŋ"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="ðInputButton" type="Button" parent="Game Background/InputButtons/Consonants2" unique_id=652112448 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants2/ðInputButton" unique_id=1232835646]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants2/ðInputButton/PanelContainer" unique_id=1195006580]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ð"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="θInputButton" type="Button" parent="Game Background/InputButtons/Consonants2" unique_id=1920479579 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants2/θInputButton" unique_id=1497001291]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants2/θInputButton/PanelContainer" unique_id=1218180784]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "θ"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="ʒInputButton" type="Button" parent="Game Background/InputButtons/Consonants2" unique_id=82896576 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants2/ʒInputButton" unique_id=1388999547]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants2/ʒInputButton/PanelContainer" unique_id=1108785148]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "ʒ"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="pInputButton" type="Button" parent="Game Background/InputButtons/Consonants2" unique_id=687326119 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants2/pInputButton" unique_id=1036724995]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants2/pInputButton/PanelContainer" unique_id=1364960006]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "p"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="DeleteButton" type="Button" parent="Game Background/InputButtons" unique_id=331583014 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 889.0
+offset_top = 784.0
+offset_right = -31.0
+offset_bottom = -136.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/DeleteButton" unique_id=697914451]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/DeleteButton/PanelContainer" unique_id=1591103302]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "←"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2
+
+[node name="EnterButton" type="Button" parent="Game Background/InputButtons" unique_id=246212362 groups=["InputButtons"]]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 887.0
+offset_top = 886.0
+offset_right = -33.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_qtbou")
+
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/EnterButton" unique_id=1591853802]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="Game Background/InputButtons/EnterButton/PanelContainer" unique_id=1632424673]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "⏎"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2

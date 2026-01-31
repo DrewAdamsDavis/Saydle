@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bb3ij2camrhpq"]
+
+[ext_resource type="Script" uid="uid://cllgv15kbs1hh" path="res://Scripts/InputLoop/InputButton.cs" id="1_tbrtu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k3bgn"]
+bg_color = Color(0.79, 0.79, 0.79, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uuasq"]
+font_size = 59
+font_color = Color(0, 0, 0, 1)
+
+[node name="InputButton" type="Button" unique_id=763800516]
+clip_contents = true
+custom_minimum_size = Vector2(50, 50)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -920.0
+offset_bottom = -920.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tbrtu")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=654776608]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=807233650]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "S"
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2

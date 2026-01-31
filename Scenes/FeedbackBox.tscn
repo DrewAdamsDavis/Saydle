@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ex5a4i5pax07"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a3c5s"]
+bg_color = Color(0.79, 0.79, 0.79, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_uuasq"]
+font_size = 57
+font_color = Color(0, 0, 0, 1)
+
+[node name="FeedbackBox" type="PanelContainer" unique_id=934160623]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -920.0
+offset_bottom = -920.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_a3c5s")
+
+[node name="Label" type="Label" parent="." unique_id=449067155]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+label_settings = SubResource("LabelSettings_uuasq")
+vertical_alignment = 2

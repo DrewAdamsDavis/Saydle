@@ -1,0 +1,19 @@
+<Project Sdk="Godot.NET.Sdk/4.6.0">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net9.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <RootNamespace>Saydle</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Data\cmu_dict.json" />
+    <Content Include="Data\ConvertedPrunedCmuDict.json" />
+    <Content Include="Data\PhonemicSolutionSet.txt" />
+    <Content Include="Data\PrunedCmuDict.json" />
+    <Content Include="Data\SolutionWords.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\FeedbackLoop\" />
+    <Folder Include="Scripts\InputLoop\" />
+  </ItemGroup>
+</Project>

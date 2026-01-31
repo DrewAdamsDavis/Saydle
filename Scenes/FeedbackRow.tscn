@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://d06wjac2bvuao"]
+
+[ext_resource type="PackedScene" uid="uid://ex5a4i5pax07" path="res://Scenes/FeedbackBox.tscn" id="1_tksy8"]
+
+[node name="FeedbackRow" type="HBoxContainer" unique_id=1930949433]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -440.0
+offset_bottom = -920.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="FeedbackBox" parent="." unique_id=934160623 instance=ExtResource("1_tksy8")]
+layout_mode = 2
+
+[node name="FeedbackBox2" parent="." unique_id=589246316 instance=ExtResource("1_tksy8")]
+layout_mode = 2
+
+[node name="FeedbackBox3" parent="." unique_id=754337271 instance=ExtResource("1_tksy8")]
+layout_mode = 2
+
+[node name="FeedbackBox4" parent="." unique_id=1256945475 instance=ExtResource("1_tksy8")]
+layout_mode = 2
+
+[node name="FeedbackBox5" parent="." unique_id=1834164616 instance=ExtResource("1_tksy8")]
+layout_mode = 2
+
+[node name="FeedbackBox6" parent="." unique_id=1397605096 instance=ExtResource("1_tksy8")]
+layout_mode = 2
+
+[node name="FeedbackBox7" parent="." unique_id=1750681377 instance=ExtResource("1_tksy8")]
+layout_mode = 2
