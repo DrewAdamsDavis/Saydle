@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using Godot;
 using Saydle.Scripts.InputLoop;
-using Saydle.Scripts.TextProcessing;
 
 namespace Saydle.Scripts;
 public partial class MasterNode : Control
@@ -39,8 +38,8 @@ public partial class MasterNode : Control
 		
 		//Generate a random selection from the Phonemic Solution Set
 		var rnd = new Random();
-		Solution = OrderedPhonemicSolutionSet[rnd.Next(OrderedPhonemicSolutionSet.Count)];
-		
+		//Solution = OrderedPhonemicSolutionSet[rnd.Next(OrderedPhonemicSolutionSet.Count)];
+		Solution = "bjugəl ";
 		
 		
 		foreach (InputButton ib in GetTree().GetNodesInGroup("InputButtons"))
@@ -72,6 +71,11 @@ public partial class MasterNode : Control
 			
 			//need to make it so doing wrong guess deletes current letters
 			
+			CurrentWord = "";
+			CurrentPosition = 0;
+			foreach (PanelContainer fbb in GetChild<Panel>(0).GetChild<VBoxContainer>(0).GetChildren()[CurrentGuess].GetChildren()) {
+				fbb.GetChild<Label>(0).Text = "";
+			}
 			
 			
 			
@@ -109,6 +113,15 @@ public partial class MasterNode : Control
 			else if (!Solution.Contains(CurrentWord[i])) {
 				fbb.AddThemeStyleboxOverride("panel", redStylebox);
 				GD.Print(CurrentWord[i], " is not in the solution.");
+				
+				//remove that character's input button for the remainder of this round
+				foreach (InputButton ib in GetTree().GetNodesInGroup("InputButtons")) {
+					if (!ib.Name.ToString().StartsWith(CurrentWord[i])) continue;
+					ib.Visible = false;
+					ib.GetChild<PanelContainer>(0).Visible = false;
+					ib.GetChild<PanelContainer>(0).GetChild<Label>(0).Visible = false;
+				}
+				
 			}
 			
 			else {

@@ -13,7 +13,6 @@
     <Content Include="Data\SolutionWords.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Scripts\FeedbackLoop\" />
     <Folder Include="Scripts\InputLoop\" />
   </ItemGroup>
 </Project>

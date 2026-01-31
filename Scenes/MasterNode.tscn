@@ -409,14 +409,14 @@ text = "o"
 label_settings = SubResource("LabelSettings_uuasq")
 vertical_alignment = 2
 
-[node name="aInputButton2" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1226932595 groups=["InputButtons"]]
+[node name="aInputButton" type="Button" parent="Game Background/InputButtons/Vowels" unique_id=1226932595 groups=["InputButtons"]]
 clip_contents = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 size_flags_horizontal = 3
 script = ExtResource("3_qtbou")
 
-[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/aInputButton2" unique_id=1145621279]
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Vowels/aInputButton" unique_id=1145621279]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -427,7 +427,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_k3bgn")
 
-[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/aInputButton2/PanelContainer" unique_id=1262336744]
+[node name="Label" type="Label" parent="Game Background/InputButtons/Vowels/aInputButton/PanelContainer" unique_id=1262336744]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -441,13 +441,13 @@ offset_top = 849.0
 offset_right = 988.0
 offset_bottom = 899.0
 
-[node name="NInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1046901658 groups=["InputButtons"]]
+[node name="nInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1046901658 groups=["InputButtons"]]
 clip_contents = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 script = ExtResource("3_qtbou")
 
-[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/NInputButton" unique_id=1163634260]
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/nInputButton" unique_id=1163634260]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -458,7 +458,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
 
-[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/NInputButton/PanelContainer" unique_id=2069025605]
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/nInputButton/PanelContainer" unique_id=2069025605]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -466,13 +466,13 @@ text = "n"
 label_settings = SubResource("LabelSettings_qtbou")
 vertical_alignment = 2
 
-[node name="TInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1551552884 groups=["InputButtons"]]
+[node name="tInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1551552884 groups=["InputButtons"]]
 clip_contents = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 script = ExtResource("3_qtbou")
 
-[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/TInputButton" unique_id=20410]
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/tInputButton" unique_id=20410]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -483,7 +483,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
 
-[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/TInputButton/PanelContainer" unique_id=235339544]
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/tInputButton/PanelContainer" unique_id=235339544]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -491,13 +491,13 @@ text = "t"
 label_settings = SubResource("LabelSettings_qtbou")
 vertical_alignment = 2
 
-[node name="SInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1246643828 groups=["InputButtons"]]
+[node name="sInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1246643828 groups=["InputButtons"]]
 clip_contents = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 script = ExtResource("3_qtbou")
 
-[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/SInputButton" unique_id=813954355]
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/sInputButton" unique_id=813954355]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -508,7 +508,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
 
-[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/SInputButton/PanelContainer" unique_id=2068195636]
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/sInputButton/PanelContainer" unique_id=2068195636]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -541,13 +541,13 @@ text = "ɹ"
 label_settings = SubResource("LabelSettings_qtbou")
 vertical_alignment = 2
 
-[node name="LInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=2122131147 groups=["InputButtons"]]
+[node name="lInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=2122131147 groups=["InputButtons"]]
 clip_contents = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 script = ExtResource("3_qtbou")
 
-[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/LInputButton" unique_id=1549387517]
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/lInputButton" unique_id=1549387517]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -558,7 +558,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
 
-[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/LInputButton/PanelContainer" unique_id=600367761]
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/lInputButton/PanelContainer" unique_id=600367761]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -566,13 +566,13 @@ text = "l"
 label_settings = SubResource("LabelSettings_qtbou")
 vertical_alignment = 2
 
-[node name="DInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1255512160 groups=["InputButtons"]]
+[node name="dInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1255512160 groups=["InputButtons"]]
 clip_contents = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 script = ExtResource("3_qtbou")
 
-[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/DInputButton" unique_id=67481750]
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/dInputButton" unique_id=67481750]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -583,7 +583,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
 
-[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/DInputButton/PanelContainer" unique_id=1377953805]
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/dInputButton/PanelContainer" unique_id=1377953805]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -591,13 +591,13 @@ text = "d"
 label_settings = SubResource("LabelSettings_qtbou")
 vertical_alignment = 2
 
-[node name="KInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1558268838 groups=["InputButtons"]]
+[node name="kInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1558268838 groups=["InputButtons"]]
 clip_contents = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 script = ExtResource("3_qtbou")
 
-[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/KInputButton" unique_id=1490582345]
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/kInputButton" unique_id=1490582345]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -608,7 +608,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
 
-[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/KInputButton/PanelContainer" unique_id=1976701789]
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/kInputButton/PanelContainer" unique_id=1976701789]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -616,13 +616,13 @@ text = "k"
 label_settings = SubResource("LabelSettings_qtbou")
 vertical_alignment = 2
 
-[node name="MInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=2099868625 groups=["InputButtons"]]
+[node name="mInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=2099868625 groups=["InputButtons"]]
 clip_contents = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 script = ExtResource("3_qtbou")
 
-[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/MInputButton" unique_id=629207201]
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/mInputButton" unique_id=629207201]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -633,7 +633,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
 
-[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/MInputButton/PanelContainer" unique_id=16185132]
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/mInputButton/PanelContainer" unique_id=16185132]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -641,13 +641,13 @@ text = "m"
 label_settings = SubResource("LabelSettings_qtbou")
 vertical_alignment = 2
 
-[node name="ZInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1745657837 groups=["InputButtons"]]
+[node name="zInputButton" type="Button" parent="Game Background/InputButtons/Consonants" unique_id=1745657837 groups=["InputButtons"]]
 clip_contents = true
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 script = ExtResource("3_qtbou")
 
-[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/ZInputButton" unique_id=332114568]
+[node name="PanelContainer" type="PanelContainer" parent="Game Background/InputButtons/Consonants/zInputButton" unique_id=332114568]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -658,7 +658,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_rocul")
 
-[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/ZInputButton/PanelContainer" unique_id=781978087]
+[node name="Label" type="Label" parent="Game Background/InputButtons/Consonants/zInputButton/PanelContainer" unique_id=781978087]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
